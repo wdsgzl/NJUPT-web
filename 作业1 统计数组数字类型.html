@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>web homework</title>
+<script>
+function counter(List){
+	var neg,zero,pos;
+	neg=0;
+	zero=0;
+	pos=0;
+	for(var i=0;i<List.length;i++)
+		switch(List.length>0){
+			case(List[i]==0):
+			zero++;
+			break;
+
+			case(List[i]<0):
+			neg++;
+			break;
+	
+			case(List[i]>0):
+			pos++;
+			break;	
+	}
+                document.write("负数有"+neg+"个"+"</br>");
+	document.write("零有"+zero+"个"+"</br>");
+	document.write("正数有"+pos+"个"+"</br>");
+	return 0;
+}
+</script>
+	<meta charset="utf-8"/>
+   </head>
+<body>
+	<script>
+	var list=[1,2,3,4,5,6,7,8,9,0,-1,-2,-3,-4,-5,-6,-7,-8,-9];
+	document.write("预设的数组是"+list+"</br>");
+	counter(list);
+	</script>
+</body>
+</html>
+
