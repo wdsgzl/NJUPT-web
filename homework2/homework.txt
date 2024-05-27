@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>homework</title>
+</head>
+<body>
+
+	<form action="measure.php">	
+	Name:<br>
+	<input type="text" name="username"><br>
+	four 25 watt<input type="checkbox" name="light[]" value="four 25 watt 2.39"><br>
+	eight 25 watt<input type="checkbox" name="light[]" value="eight 25 watt 4.29"><br>
+	four 25 watt long<input type="checkbox" name="light[]" value="four 25 watt long 3.95"><br>
+	eight 25 watt long<input type="checkbox" name="light[]" value="eight 25 watt long 7.49"><br>
+	Visa<input type="radio" name="pay" value="Visa"><br>
+	Master Card<input type="radio" name="pay" value="Master Card"><br>
+	Discover<input type="radio" name="pay"> value="Discover"<br>
+	<input type="submit">
+	</form>
+</body>
