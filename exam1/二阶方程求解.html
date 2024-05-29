@@ -1,0 +1,45 @@
+<html>
+  	<head>
+		<title>二阶方程求解</title>
+		<script>
+			function solve(a,b,c){
+				var solvationa=0;
+				var solvationb=0;
+				var temp=0;
+				if((b*b-4*a*c)==0){
+					solvationa=(-b+temp)/(2*a);
+					document.write("该方程有重根为:"+solvationa+"</br>");
+					}
+				if((b*b-4*a*c)>0){
+					temp=Math.sqrt(b*b-4*a*c);
+					solvationa=(-b+temp)/(2*a);
+					solvationb=(-b-temp)/(2*a);
+					document.write("该方程有两个根分别为"+solvationa+"与"+solvationb+"</br>")
+				}
+					
+				if((b*b-4*a*c)<0){
+				temp=Math.abs(b*b-4*a*c);
+				temp=Math.sqrt(temp);
+				document.write("该方程有两个根分别为"+(-b)/(2*a)+"+"+temp/(2*a)+"i"+"与"+(-b)/(2*a)+"-"+temp/(2*a)+"i"+"</br>")
+				}
+	return 0;
+				
+}
+</script>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<p>以下测试三种情况，分别为有重根（4，4，1），有两根（4，5，1），有虚数根（5，4，1）</p>
+<script>
+	var a=4,b=4,c=1;
+	solve(a,b,c);
+	var a=4,b=5,c=1;
+	solve(a,b,c);
+	var a=5,b=4,c=1;
+	solve(a,b,c);
+</script>
+</body>
+</html>
+
+			
